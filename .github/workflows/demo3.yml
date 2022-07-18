@@ -1,5 +1,5 @@
 
-name: Java1
+name: Java2
 
 on: [push]
 
@@ -15,4 +15,4 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Build with Maven
-        run: mvn -B package
+        run: mvn -B package --file pom.xml
